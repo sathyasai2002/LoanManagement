@@ -1,4 +1,5 @@
 ﻿using LoanManagement.Services;
+using LoanManagement.Repository;
 
 namespace LoanManagement
 {
@@ -8,5 +9,8 @@ namespace LoanManagement
         {
             LoneApp loneApp = new LoneApp();
             loneApp.Menu();
+            /*ILoanRepository loanRepository = new LoanRepositoryImpl();
+            loanRepository.CalculateEMI(7);*/
+        }
     }
 }

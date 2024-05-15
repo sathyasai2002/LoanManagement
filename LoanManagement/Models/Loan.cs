@@ -43,7 +43,7 @@ namespace LoanManagement.Models
 
         public override string ToString()
         {
-            return $" {LoanId},{CustomerId}, {PrincipalAmount:C}, {InterestRate:P},{LoanTerm},{LoanType},{LoanStatus}";
+            return $" {LoanId},{CustomerId}, {PrincipalAmount}, {InterestRate},{LoanTerm},{LoanType},{LoanStatus}";
         }
     }
 }

@@ -25,7 +25,7 @@ namespace LoanManagement
                 Console.WriteLine("6. Get All Loans");
                 Console.WriteLine("7. Get loan By Id");
 
-                Console.WriteLine("2. Exit");
+                Console.WriteLine("8. Exit");
                 Console.WriteLine("Enter your choice:");
 
                 string choice = Console.ReadLine();
@@ -36,8 +36,18 @@ namespace LoanManagement
                         loanServices.ApplyLoan();
                         break;
                     case "2":
-                        Console.WriteLine("Exiting Loan Management System...");
+                        loanServices.CalculateInterest();
                         return;
+                    case "3":
+                        loanServices.LoanStatus();
+                        return;
+                    case "4":
+                        loanServices.CalculateEMI();
+                        return;
+                    case "7":
+                        loanServices.GetLoanById();
+                        return;
+                    
                     default:
                         Console.WriteLine("Invalid choice. Please try again.");
                         break;
